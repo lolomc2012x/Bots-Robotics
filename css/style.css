@@ -1,0 +1,71 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+a{
+    color:aliceblue;
+    text-decoration:none;
+    transition: 0.3s;
+    font-size: 24px;
+}
+a:hover{
+    opacity: 0.6;
+}
+nav{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color:rgb(117, 44, 219);
+    height: 8vh;
+}
+main{
+    background: url("../fotos/robo.jpg") no-repeat center center;
+    background-size: cover;
+    height: 92vh;
+    animation: surgir 2s forwards;
+    display: flex;
+    flex-direction: column;
+}
+@keyframes surgir{
+    from{
+        opacity: 0.6;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap:300px;
+}
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+    user-select: none;
+}
+.back1{
+    margin-left: 72%;
+    padding: 0px;
+    margin-top:10%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.back1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 50px;
+    pointer-events: none;
+    user-select: none;
+    color:rgb(117, 44, 219);
+    overflow: hidden;
+}
+@keyframes subir{
+
+}
+.nome{
+    pointer-events: none;
+    user-select: none;
+    font-size: 40px;
+}
